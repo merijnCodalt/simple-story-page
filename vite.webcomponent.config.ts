@@ -15,6 +15,7 @@ export default defineConfig({
     "process.env.NODE_ENV": JSON.stringify("production"),
   },
   build: {
+    outDir: "docs",
     lib: {
       entry: path.resolve(__dirname, "src/web-component.tsx"),
       name: "HeroSection",
