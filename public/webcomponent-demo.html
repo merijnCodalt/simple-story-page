@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section Web Component Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #fafafa;
+      min-height: 100vh;
+    }
+    .demo-header {
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #262626;
+    }
+    .demo-header h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .demo-header p {
+      color: #a1a1aa;
+      font-size: 0.875rem;
+    }
+    .demo-section {
+      padding: 2rem;
+      border-bottom: 1px solid #262626;
+    }
+    .demo-section h2 {
+      font-size: 1.125rem;
+      margin-bottom: 1rem;
+      color: #fafafa;
+    }
+    .code-block {
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 8px;
+      padding: 1rem;
+      overflow-x: auto;
+      font-family: 'Monaco', 'Menlo', monospace;
+      font-size: 0.875rem;
+      color: #a1a1aa;
+    }
+    .code-block code {
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-header">
+    <h1>🌊 Hero Section Web Component</h1>
+    <p>A framework-agnostic web component built with React</p>
+  </div>
+
+  <!-- Demo of the web component -->
+  <hero-section
+    title="Where the Sea"
+    subtitle="Meets the Soul"
+    description="In the quiet hours of dawn, when golden light spills across the dunes, there exists a moment of perfect stillness."
+  ></hero-section>
+
+  <div class="demo-section">
+    <h2>Usage</h2>
+    <div class="code-block">
+      <pre><code>&lt;script src="hero-section.umd.js"&gt;&lt;/script&gt;
+
+&lt;hero-section
+  title="Your Title"
+  subtitle="Your Subtitle"
+  description="Your description text"
+  image-src="https://example.com/image.jpg"
+  image-alt="Image description"
+&gt;&lt;/hero-section&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Available Attributes</h2>
+    <div class="code-block">
+      <pre>title       - Main heading text
+subtitle    - Secondary heading (highlighted)
+description - Body text paragraph
+image-src   - URL for the hero image
+image-alt   - Alt text for accessibility</pre>
+    </div>
+  </div>
+
+  <!-- Load the UMD bundle -->
+  <script src="./hero-section.umd.js"></script>
+</body>
+</html>
