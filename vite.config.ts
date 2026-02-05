@@ -18,4 +18,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // Build configuration for web component library
+  // Run: npm run build to generate the web component bundle
+  // Output: dist/hero-section.es.js and dist/hero-section.umd.js
 }));
