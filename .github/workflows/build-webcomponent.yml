@@ -27,6 +27,9 @@ jobs:
       - name: Build web component
         run: npx vite build --config vite.webcomponent.config.ts
 
+      - name: Copy demo page to dist
+        run: cp public/webcomponent-demo.html dist/index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
